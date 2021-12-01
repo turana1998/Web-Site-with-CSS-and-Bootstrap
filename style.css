@@ -6,7 +6,7 @@
     background-color: #fff;
     position: fixed;
     top: 0;
-    z-index: 99999;
+    z-index: 100;
     width: 100%;
 }
 
@@ -23,16 +23,7 @@
 header {
     border-bottom: 4px solid #ff8a01;
     position: relative;
-}
-
-header:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    bottom: 1px;
-    z-index: 4;
-    transform: scale(1);
-    box-shadow: 1px 9px 0px 3px #e9eaeb;
+    box-shadow: 0px 4px #95959530;
 }
 
 .top_menu {
@@ -185,7 +176,7 @@ main {
     top: 40px;
     /* the height of the main nav */
     left: 10px;
-    z-index: 9999;
+    z-index: 200;
 
 }
 
@@ -270,6 +261,47 @@ main {
     border-bottom: 5px solid #ff8a01;
 }
 
+.slider-nav  .next {
+    font-size: 15px;
+    line-height: 0;
+    color: #000;
+    right: -20px;
+    position: absolute;
+    top: 30%;
+    display: block;
+    border-radius: 5px;
+    height: 40px;
+    z-index: 999;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.slider-nav  .prev {
+    font-size: 15px;
+    line-height: 0;
+    left: -20px;
+    color: #000;
+    position: absolute;
+    top: 30%;
+    display: block;
+    border-radius: 5px;
+    height: 40px;
+    z-index: 999;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+}
 #section1 .regular .next {
     font-size: 0;
     line-height: 0;
@@ -1182,11 +1214,11 @@ display: block;
     transition: transform 0.25s ease;
     cursor: zoom-in;
   }
-  
-  .detail-page .item input[type=checkbox]:checked ~ label > img {
+  .detail-page .slider-for .item img:hover {
     transform: scale(2);
     cursor: zoom-out;
   }
+  
 
 .detail-page {
     background-color: #FFF;

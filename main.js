@@ -138,23 +138,24 @@ $(document).ready(function () {
         asNavFor: '.slider-nav'
     });
     $('.slider-nav').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         asNavFor: '.slider-for',
         centerMode: true,
-        prevArrow: "",
-        nextArrow: "",
+        prevArrow: '<button class="prev"><i class="bi bi-arrow-left"></i></button>',
+        nextArrow: '<button class="next"><i class="bi bi-arrow-right"></i></button>',
         focusOnSelect: true
     });
-    $(".money").click(function () {
-
-        let x = jQuery(this).find(".choose-submenu");
-        if (jQuery(this).find(".choose-submenu").hasClass("d-none")) {
-            jQuery(this).find(".choose-submenu").removeClass("d-none")
+    $(".choose").click(function () {
+        console.log("aa")
+        let x =  $(this).next(".choose-submenu").toggle();;
+        console.log(x)
+        if (x.hasClass("d-none")) {
+            x.removeClass("d-none")
 
         } else {
 
-            jQuery(this).find(".choose-submenu").addClass("d-none");
+            x.addClass("d-none");
         }
     });
 
