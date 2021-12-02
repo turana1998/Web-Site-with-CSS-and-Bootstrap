@@ -17,6 +17,27 @@
 }
 
 @media screen and (max-width: 992px) {
+    .slider-detail-text .addbasket{
+        padding: 10px;
+        font-size: 16px;
+    }
+    .slider-detail-text .buynow{
+        padding: 10px;
+        font-size: 16px;
+    }
+    .menu-page{
+        padding: 0;
+    }
+    .detail-page{
+        padding: 0;
+    }
+    .slider-detail-text .endirim .faiz{
+        font-size: 18px;
+        padding: 10px 0;
+    }
+    .slider-detail-text .endirim .time{
+        padding: 10px 0;
+    }
     .profil-page .product{
         flex-direction: column;
     }
@@ -29,7 +50,7 @@
      .choose-submenu2 {
         top: 120px !important;
         left: 50%;
-        transform: translate(-70%, 0%);
+        transform: translate(-80%, 0%);
     }
     .basket-page .product{
         flex-direction: column;
